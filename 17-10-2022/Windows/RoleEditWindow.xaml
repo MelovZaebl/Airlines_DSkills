@@ -1,0 +1,36 @@
+﻿<Window x:Class="_17_10_2022.Windows.RoleEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_17_10_2022.Windows"
+        mc:Ignorable="d"
+        Title="RoleEditWindow" Height="300" Width="400" WindowStyle="None">
+    <StackPanel>
+        <WrapPanel Margin="50, 10">
+            <TextBlock Text="Email address" Margin="0,0,10,0"/>
+            <TextBox Width="200" Text="{Binding Email}" IsEnabled="False"/>
+        </WrapPanel>
+        <WrapPanel Margin="50, 10">
+            <TextBlock Text="First name" Margin="0,0,30,0"/>
+            <TextBox Width="200" Text="{Binding Firstname}" IsEnabled="False"/>
+        </WrapPanel>
+        <WrapPanel Margin="50, 10">
+            <TextBlock Text="Last name" Margin="0,0,28,0"/>
+            <TextBox Width="200" Text="{Binding Lastname}" IsEnabled="False"/>
+        </WrapPanel>
+        <WrapPanel Margin="50, 10">
+            <TextBlock Text="Office" Margin="0,0,54,0"/>
+            <ComboBox Name="CBOffice" Width="200" DisplayMemberPath="Title" IsEnabled="False"/>
+        </WrapPanel>
+        <WrapPanel Margin="50, 10">
+            <TextBlock Text="Role:" Margin="0,0,50,0"/>
+            <RadioButton Content="Administrator" Name="RBAdmin"/>
+            <RadioButton Content="User" Margin="78,5" Name="RBUser"/>
+        </WrapPanel>
+        <WrapPanel Margin="50, 10">
+            <Button Content="Apply" Width="100" Margin="0,0,50,0" Click="Apply"/>
+            <Button Content="Cancel" Width="100" Click="Cancel"/>
+        </WrapPanel>
+    </StackPanel>
+</Window>

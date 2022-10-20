@@ -1,0 +1,20 @@
+﻿<Window x:Class="_17_10_2022.Windows.ExecptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_17_10_2022.Windows"
+        mc:Ignorable="d"
+        Title="Ошибка" Height="350" Width="500"
+        WindowStyle="None">
+    <StackPanel>
+        <TextBlock Name="TB" Margin="5" TextWrapping="Wrap"/>
+        <TextBlock Text="Reason:" Margin="5"/>
+        <TextBox Name="Reason" Margin="20,5" Height="140"/>
+        <WrapPanel Margin="20, 5">
+            <RadioButton Content="Softwave Crash" IsChecked="True" Name="RBSoft"/>
+            <RadioButton Content="System Crash" Margin="50, 0" Name="RBSys"/>
+            <Button Content="Confirm" Width="70" Margin="40, 0" Click="btn_Confirm"/>
+        </WrapPanel>
+    </StackPanel>
+</Window>
