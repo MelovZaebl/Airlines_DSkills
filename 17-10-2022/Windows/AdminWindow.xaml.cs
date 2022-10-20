@@ -90,7 +90,7 @@ namespace _17_10_2022.Windows
             }
             CBOffice.SelectedIndex = 0;
 
-            Update();
+            Update(); // метод обновления таблицы
 
         }
     }
